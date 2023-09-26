@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+:root{
+    /* Primary colors */
+
+--soft-blue: hsl(231, 69%, 60%);
+--soft-red: hsl(0, 94%, 66%);
+
+    /* Neutral colors */
+
+--grayish-blue: hsl(229, 8%, 60%);
+--very-dark-blue: hsl(229, 31%, 21%);
+
+font-size: 18px;
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    font-family: 'Rubik', sans-serif;
+    color: var(--grayish-blue);
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* utility classes */
+/* ----------------------------------- */
+
+h1, h2, h4{
+    margin-bottom: 1.5rem;
+    color: var(--very-dark-blue);
 }
 
-.App-link {
-  color: #61dafb;
+p{
+    margin-bottom: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section{
+    margin-bottom: 2rem;
 }
+
+.component-margin{
+    margin-bottom: 8rem;
+}
+
+button{
+    border: none;
+    outline: none;
+    margin: 0 0.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--soft-blue);    
+}
+
+.app-container{
+    padding: 1.5rem;
+}
+
+/* navbar */
+/* ----------------------------------- */
+
+nav{
+    /* border: 1px solid red; */
+    height: 40px;
+}
+
+nav img:first-child{
+    float: left;
+}
+
+nav img:nth-child(2){
+    float: right;
+}
+
+
+/* hero feature */
+/* ----------------------------------- */
+
+/* .hero{
+    border: 1px solid red;
+} */
+
+.hero-feature img{
+    /* width: 100%; */
+    object-fit: fill;
+    /* border: 1px solid green; */
+}
+
+
+
+.hero-feature section:last-child button{
+    border: none;
+    outline: none;
+    margin: 0 0.5rem;
+    padding: 0.6rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--very-dark-blue);
+    box-shadow: 2px 2px 2px var(--grayish-blue);
+}
+
+.hero-feature section:last-child button:hover{
+    background-color: var(--soft-blue);
+    color: white;
+    box-shadow: none;
+}
+
+/* features component */
+/* ----------------------------------- */
+
+
+.features p{
+    margin-bottom: 2.5rem;
+}
+
+.features span{
+    display: block;
+    border-bottom: 1px solid var(--grayish-blue);
+    padding: 0.9rem 0.5rem;
+}
+
+.features span:first-of-type{
+    border-top: 1px solid var(--grayish-blue);
+}
+
+.features span button{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: white;
+    color: var(--grayish-blue);
+}
+
+.features hr{
+    visibility: hidden;
+}
+
+/* ************* hover effect */
+
+.features section:last-child img{
+    margin: 2rem 0;
+}
+
+
+
+
+/* Download component */
+/* ----------------------------------- */
+
+.download section:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.download .card{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px var(--grayish-blue), -2px 0px 2px var(--grayish-blue);
+}
+
+.download .card img{
+    display: inline-block;
+    margin: 1rem;
+}
+
+.download .card button{
+    margin-top: 0.5rem;
+}
+
+
+/* FAQ component */
+/* ----------------------------------- */
+
+.faq section:last-child > div{
+    border-bottom: 1px solid var(--grayish-blue);
+    margin-bottom: 1rem;
+}
+
+.faq .questions{ 
+    padding: 0.5rem 0;
+    text-align: left;
+    height: 3rem;
+    overflow: hidden;
+}
+
+.faq .questions > p{
+    display: inline-block;
+    left: 0;
+    color: var(--very-dark-blue);
+   
+}  
+
+.faq .questions img{
+    margin-top: 0.1rem;
+    right: 0;
+    float: right;
+}
+
+.faq .open {
+    height: auto;
+}
+
+.faq .questions .flip{
+    transform: rotate(180deg);
+    color: var(--soft-red);
+}
+
+.faq section:last-child button{
+    margin-top: 1.2rem;
+}
+
