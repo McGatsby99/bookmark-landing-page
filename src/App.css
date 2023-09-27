@@ -8,6 +8,7 @@
 
 --grayish-blue: hsl(229, 8%, 60%);
 --very-dark-blue: hsl(229, 31%, 21%);
+--trans-dark-blue: hsla(229, 31%, 21%, 0.4);
 
 font-size: 18px;
 
@@ -59,8 +60,9 @@ button{
     cursor: pointer; 
 }
 
-.container{
+.content-container{
     padding: 1rem;
+    position: relative;
 }
 
 .feature-image{
@@ -74,6 +76,7 @@ button{
 nav{
     /* border: 1px solid red; */
     height: 40px;
+    transition: transform 2s;
 }
 
 nav img:first-child{
@@ -84,6 +87,83 @@ nav img:nth-child(2){
     float: right;
 }
 
+nav .flip{
+    transform: rotate(90deg);
+}
+
+/* Pop up nav */
+/* ----------------------------------- */
+
+.pop-up-nav{
+    position: fixed;
+    top: 0;
+    left: 3000px;
+    z-index: 200;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--soft-red);
+    padding: 1.5rem;
+    background-color: var(--very-dark-blue);
+    opacity: 0.9;
+    transition: left 2s;
+}
+
+.show{
+    left:0
+}
+
+.pop-up-nav header{
+    text-align: left;
+}
+
+.pop-up-nav header img:first-child{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(100%) contrast(108%);
+
+}
+
+.pop-up-nav header img:last-child{
+    float: right;
+}
+
+.pop-up-nav .menu{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pop-up-nav .menu button{
+    margin: 0.5rem;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid var(--grayish-blue);
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 1.2rem;
+}
+
+.pop-up-nav .menu button:first-child{
+    border-top: 1px solid var(--grayish-blue);
+    padding-top: 1.5rem;
+}
+
+.pop-up-nav .menu button:hover{
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.pop-up-nav > img:first-of-type{
+    position: absolute;
+    /* margin: 2rem; */
+    left:60%;
+    bottom: 2rem;
+}
+
+.pop-up-nav > img:last-of-type{
+    position: absolute;
+    left: 40%;
+    bottom: 2rem;
+    /* margin: 2rem; */
+}
 
 /* hero feature */
 /* ----------------------------------- */
@@ -227,6 +307,8 @@ nav img:nth-child(2){
 
 .faq .open {
     height: auto;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(100%) contrast(108%);
+
 }
 
 .faq .questions .flip{

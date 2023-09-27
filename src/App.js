@@ -12,10 +12,7 @@ import HeroFeature from './components/HeroFeature';
 
 
 /* 
-  Features
-  Pricing
-  Contact
-  Login
+  
 
   
 
@@ -44,23 +41,31 @@ import HeroFeature from './components/HeroFeature';
 */
 
 import Nav from './components/Nav';
+import PopUpNav from './components/PopUpNav';
+import React, {useState} from 'react';
 
 
 
 function App() {
+
+  const [navOpen, setNavOpen] = useState(false)
+
   return (
-    <>
-      <div className="container">
-        <Nav />
+    <div class="app-container">
+      
+      <div className="content-container">
+        <Nav navOpen={navOpen} setNavOpen={setNavOpen} />
+        <PopUpNav navOpen={navOpen} setNavOpen={setNavOpen}/>
         <HeroFeature />
         <Features />
         <Download />
         <FAQ />
       </div>
+
       <Contact />
       <Footer />
       <BackgroundFeature />
-    </>
+    </div>
   );
 }
 
