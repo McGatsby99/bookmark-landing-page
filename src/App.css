@@ -34,7 +34,7 @@ h1, h2, h4{
     color: var(--very-dark-blue);
 }
 
-p{
+p, img{
     margin-bottom: 1.5rem;
 }
 
@@ -57,7 +57,7 @@ button{
     background-color: var(--soft-blue);    
 }
 
-.app-container{
+.container{
     padding: 1.5rem;
 }
 
@@ -220,5 +220,64 @@ nav img:nth-child(2){
 
 .faq section:last-child button{
     margin-top: 1.2rem;
+}
+
+
+/* contact component */
+/* ----------------------------------- */
+
+.contact{
+    background-color: var(--soft-blue);
+    color: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h2{
+    color: white;
+}
+
+.contact input{
+    display: block;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    width: 70%;
+}
+
+.contact button{
+    background-color: var(--soft-red);
+    width: 70%;
+}
+
+
+/* footer component */
+/* ----------------------------------- */
+
+.footer{
+    padding: 3rem;
+    color: white;
+    background-color: var(--very-dark-blue);
+}
+
+.footer p{
+    text-transform: uppercase;
+}
+
+
+/* attribution component */
+/* ----------------------------------- */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
 

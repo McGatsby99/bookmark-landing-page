@@ -1,8 +1,10 @@
 
 import './App.css';
+import Contact from './components/Contact';
 import Download from './components/Download';
 import FAQ from './components/FAQ';
 import Features from './components/Features';
+import Footer from './components/Footer';
 import HeroFeature from './components/HeroFeature';
 
 
@@ -33,17 +35,8 @@ import HeroFeature from './components/HeroFeature';
 
 
   
-  More Info
 
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
-
-  Features
-  Pricing
-  Contact
+  
 
 */
 
@@ -53,13 +46,17 @@ import Nav from './components/Nav';
 
 function App() {
   return (
-    <div className="app-container">
-      <Nav />
-      <HeroFeature />
-      <Features />
-      <Download />
-      <FAQ />
-    </div>
+    <>
+      <div className="container">
+        <Nav />
+        <HeroFeature />
+        <Features />
+        <Download />
+        <FAQ />
+      </div>
+      <Contact />
+      <Footer />
+    </>
   );
 }
 
