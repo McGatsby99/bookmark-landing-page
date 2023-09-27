@@ -1,10 +1,11 @@
 import heroImage from '../images/illustration-hero.svg'
+// import BackgroundFeature from './BackgroundFeature'
 
 const HeroFeature = () => {
   return (
     <div className='hero-feature component-margin'>
         <section>
-            <img src={heroImage} alt=""/>
+            <img className='feature-image' src={heroImage} alt=""/>
         </section>
 
         <section className='intro'> 
@@ -16,10 +17,11 @@ const HeroFeature = () => {
                 browser tab and see your sites load instantly. Try it for free.
 
             </p>
-            <button>Get it on Chrome</button>
-            <button>Get it on Firefox</button>
+            <div class="buttons">
+              <button>Get it on Chrome</button>
+              <button>Get it on Firefox</button>
+            </div>
         </section>
-
     </div>
   )
 }

@@ -4,8 +4,8 @@ import menuHamburger from '../images/icon-hamburger.svg'
 const Nav = () => {
   return (
     <nav className='component-margin'>
-        <img src={bookmarkIcon} alt="" height={30}/>
-        <img src={menuHamburger} alt="" height={30}/>
+        <img src={bookmarkIcon} alt="" height={25}/>
+        <img src={menuHamburger} alt="" height={25}/>
   </nav>
   )
 }

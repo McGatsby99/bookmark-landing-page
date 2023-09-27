@@ -1,11 +1,14 @@
 
 import './App.css';
+import BackgroundFeature from './components/BackgroundFeature';
 import Contact from './components/Contact';
 import Download from './components/Download';
 import FAQ from './components/FAQ';
 import Features from './components/Features';
 import Footer from './components/Footer';
 import HeroFeature from './components/HeroFeature';
+
+
 
 
 /* 
@@ -56,6 +59,7 @@ function App() {
       </div>
       <Contact />
       <Footer />
+      <BackgroundFeature />
     </>
   );
 }

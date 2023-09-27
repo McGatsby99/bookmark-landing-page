@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="contact">
         <p>35,000+ already joined</p>
-        <h2>Stay up-to-date with what we’re doing</h2>
+        <h3>Stay up-to-date with what we’re doing</h3>
         <input 
             type="email" 
             placeholder="Enter your email address"

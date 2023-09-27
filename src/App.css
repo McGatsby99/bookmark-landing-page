@@ -29,21 +29,22 @@ body{
 /* utility classes */
 /* ----------------------------------- */
 
-h1, h2, h4{
-    margin-bottom: 1.5rem;
+h1, h3, h4{
+    margin-bottom: 0.8rem;
     color: var(--very-dark-blue);
 }
 
 p, img{
     margin-bottom: 1.5rem;
+    /* font-size: 0.9rem; */
 }
 
 section{
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .component-margin{
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 button{
@@ -54,11 +55,17 @@ button{
     border-radius: 5px;
     font-size: 1rem;
     color: white;
-    background-color: var(--soft-blue);    
+    background-color: var(--soft-blue);   
+    cursor: pointer; 
 }
 
 .container{
-    padding: 1.5rem;
+    padding: 1rem;
+}
+
+.feature-image{
+    width: 100%;
+    object-fit: fill;
 }
 
 /* navbar */
@@ -81,35 +88,37 @@ nav img:nth-child(2){
 /* hero feature */
 /* ----------------------------------- */
 
-/* .hero{
-    border: 1px solid red;
-} */
-
-.hero-feature img{
-    /* width: 100%; */
-    object-fit: fill;
-    /* border: 1px solid green; */
+.hero-feature{
+    position: relative;
 }
 
+/* .hero-feature h1{
+    font-size: 1.7rem;
+} */
 
 
 .hero-feature section:last-child button{
     border: none;
     outline: none;
     margin: 0 0.5rem;
-    padding: 0.6rem;
+    padding: 0.7rem;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
-    color: var(--very-dark-blue);
-    box-shadow: 2px 2px 2px var(--grayish-blue);
+    color: white;
+    box-shadow: 0px 2px 5px var(--grayish-blue);
 }
 
-.hero-feature section:last-child button:hover{
-    background-color: var(--soft-blue);
-    color: white;
-    box-shadow: none;
+.hero-feature section:last-child button:last-child{
+    background-color: whitesmoke;
+    color: var(--very-dark-blue);
 }
+
+/* .hero-feature section:last-child button:hover{
+    background-color: var(--soft-blue);
+    color: gray;
+    box-shadow: none;
+} */
 
 /* features component */
 /* ----------------------------------- */
@@ -122,7 +131,7 @@ nav img:nth-child(2){
 .features span{
     display: block;
     border-bottom: 1px solid var(--grayish-blue);
-    padding: 0.9rem 0.5rem;
+    padding: 0.3rem 0;
 }
 
 .features span:first-of-type{
@@ -132,14 +141,18 @@ nav img:nth-child(2){
 .features span button{
     border: none;
     outline: none;
-    font-size: 18px;
+    font-size: 1rem;
     background-color: white;
     color: var(--grayish-blue);
+    border-radius: 0;
+    height: 100%;
+    
 }
 
-.features hr{
-    visibility: hidden;
+.features span button:hover{
+    border-bottom: 3px solid red;
 }
+
 
 /* ************* hover effect */
 
@@ -166,9 +179,10 @@ nav img:nth-child(2){
     flex-direction: column;
     align-items: center;
     width: 45%;
+    min-width: 300px;
     /* border: 1px solid red; */
     border-radius: 10px;
-    box-shadow: 2px 2px 2px var(--grayish-blue), -2px 0px 2px var(--grayish-blue);
+    box-shadow: 1px 1px 5px var(--grayish-blue), -1px 0px 5px var(--grayish-blue);
 }
 
 .download .card img{
@@ -194,12 +208,14 @@ nav img:nth-child(2){
     text-align: left;
     height: 3rem;
     overflow: hidden;
+    /* transition: height 2s linear; */
 }
 
 .faq .questions > p{
     display: inline-block;
     left: 0;
     color: var(--very-dark-blue);
+    font-size: 0.9rem;
    
 }  
 
@@ -235,7 +251,7 @@ nav img:nth-child(2){
     align-items: center;
 }
 
-.contact h2{
+.contact h3{
     color: white;
 }
 
@@ -247,13 +263,14 @@ nav img:nth-child(2){
     border-radius: 5px;
     padding: 0.8rem;
     margin-bottom: 1rem;
-    width: 70%;
+    width: 100%;
 }
 
 .contact button{
     background-color: var(--soft-red);
-    width: 70%;
+    width: 100%;
 }
+
 
 
 /* footer component */
@@ -263,11 +280,24 @@ nav img:nth-child(2){
     padding: 3rem;
     color: white;
     background-color: var(--very-dark-blue);
+    margin-bottom: 1rem;
+}
+
+.footer img:first-child{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(100%) contrast(108%);
 }
 
 .footer p{
     text-transform: uppercase;
 }
+
+.footer .icons{
+    margin: 0 1rem;
+}
+
+/* feature background component */
+/* ----------------------------------- */
+
 
 
 /* attribution component */
