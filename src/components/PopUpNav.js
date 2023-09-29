@@ -16,7 +16,7 @@ const PopUpNav = ({ navOpen, setNavOpen }) => {
                 onClick={() => setNavOpen(!navOpen)}
                 />
         </header>
-        <div class="menu">
+        <div className="menu">
             <button>Features</button>
             <button>Pricing</button>
             <button>Contact</button>

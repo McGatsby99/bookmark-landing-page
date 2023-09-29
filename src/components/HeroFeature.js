@@ -17,7 +17,7 @@ const HeroFeature = () => {
                 browser tab and see your sites load instantly. Try it for free.
 
             </p>
-            <div class="buttons">
+            <div className="buttons">
               <button>Get it on Chrome</button>
               <button>Get it on Firefox</button>
             </div>

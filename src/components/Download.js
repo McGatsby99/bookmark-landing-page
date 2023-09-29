@@ -15,21 +15,21 @@ const Download = () => {
             </p>
         </section>
         <section>
-            <div class="card">
+            <div className="card">
                 <img src={chrome} alt="" width={100}/>
                 <h4>Add to Chrome</h4>
                 <p>Minimum version 62</p>
                 <img src={dots} alt=""/>
                 <button>Add & Install Extension</button>
             </div>
-            <div class="card">
+            <div className="card">
                 <img src={firefox} alt="" width={100}/>
                 <h4>Add to firefox</h4>
                 <p>Minimum version 55</p>
                 <img src={dots} alt=""/>
                 <button>Add & Install Extension</button>
             </div>
-            <div class="card">
+            <div className="card">
                 <img src={opera} alt="" width={100}/>
                 <h4>Add to Chrome</h4>
                 <p>Minimum version 46</p>

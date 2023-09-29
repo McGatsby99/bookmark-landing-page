@@ -77,11 +77,9 @@ nav{
     /* border: 1px solid red; */
     height: 40px;
     transition: transform 2s;
+    text-align: left;
 }
 
-nav img:first-child{
-    float: left;
-}
 
 nav img:nth-child(2){
     float: right;
@@ -117,7 +115,7 @@ nav .flip{
 }
 
 .pop-up-nav header img:first-child{
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(100%) contrast(108%);
+    -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(138deg) brightness(102%) contrast(101%);
 
 }
 
@@ -307,13 +305,11 @@ nav .flip{
 
 .faq .open {
     height: auto;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(100%) contrast(108%);
-
 }
 
 .faq .questions .flip{
     transform: rotate(180deg);
-    color: var(--soft-red);
+    -webkit-filter: invert(49%) sepia(46%) saturate(5536%) hue-rotate(332deg) brightness(109%) contrast(96%);
 }
 
 .faq section:last-child button{
@@ -331,10 +327,42 @@ nav .flip{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .contact h3{
     color: white;
+}
+
+.contact .error-msg{
+    text-align: left;
+    width: 100%;
+    height: 1.6rem;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    background-color: var(--soft-red);
+    margin-bottom: 1rem;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+
+}
+
+.contact .error-msg p{
+    display: inline-block;
+}
+
+.contact .error-msg img{
+    float: right;
+    position: relative;
+    bottom: 2rem;
+    right: 0.5rem;
+
+} 
+
+.contact .hide{
+    height: 0;
+    background-color: var(--soft-blue);
+    overflow: hidden;
 }
 
 .contact input{
@@ -344,8 +372,13 @@ nav .flip{
     border: none;
     border-radius: 5px;
     padding: 0.8rem;
-    margin-bottom: 1rem;
     width: 100%;
+}
+
+.contact .error{
+    border: 3px solid var(--soft-red);
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
 }
 
 .contact button{
@@ -366,7 +399,7 @@ nav .flip{
 }
 
 .footer img:first-child{
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(100%) contrast(108%);
+    -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(100%) contrast(108%);
 }
 
 .footer p{

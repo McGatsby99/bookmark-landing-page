@@ -51,7 +51,7 @@ function App() {
   const [navOpen, setNavOpen] = useState(false)
 
   return (
-    <div class="app-container">
+    <div className="app-container">
       
       <div className="content-container">
         <Nav navOpen={navOpen} setNavOpen={setNavOpen} />
